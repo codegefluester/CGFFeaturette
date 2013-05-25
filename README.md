@@ -143,3 +143,5 @@ At first add the `CGFFeaturette.h` and `CGFFeaturette.m` to your project. There 
 
 ## ToDo
 - Add more filters (e.g. min-os-version instead of defining each supported OS version individually)
+- Tests
+- Many more stuff

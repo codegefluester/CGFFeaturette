@@ -1,0 +1,19 @@
+{
+    "version" : "1.0",
+    "features" : [
+        {
+            "key" : "facebook-login",
+            "enabled" : true,
+            "only-os" : [
+                "6"
+            ],
+            "only-device-family" : [
+                "phone"
+            ]
+        },
+        {
+            "key" : "share-dialog",
+            "enabled" : false
+        }
+    ]    
+}

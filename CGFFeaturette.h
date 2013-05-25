@@ -11,8 +11,8 @@
 
 #define CGFFLog(f, ...) NSLog(@"CGFFeaturette: %@", [NSString stringWithFormat:(f), ##__VA_ARGS__])
 #define FEATURE_FILE @"features.json"
-#define kCGFFeaturetteDidLoadFeaturesNotifiaction @"CGFFeaturetteDidLoadFeaturesNotifiaction"
-#define kCGFFeaturetteDidFailNotifiaction @"CGFFeaturetteDidFailNotifiaction"
+#define kCGFFeaturetteDidLoadFeaturesNotification @"CGFFeaturetteDidLoadFeaturesNotifiaction"
+#define kCGFFeaturetteDidFailNotification @"CGFFeaturetteDidFailNotifiaction"
 
 @interface CGFFeaturette : NSObject
 

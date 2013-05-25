@@ -88,16 +88,16 @@ static CGFFeaturette *_sharedInstance = nil;
                 self.features = [self.config objectForKey:@"features"];
                 [self createFeatureCache];
                 
-                [[NSNotificationCenter defaultCenter] postNotificationName:kCGFFeaturetteDidLoadFeaturesNotifiaction object:nil];
+                [[NSNotificationCenter defaultCenter] postNotificationName:kCGFFeaturetteDidLoadFeaturesNotification object:nil];
             } else {
                 // Failed to parse JSON
                 CGFFLog(@"Loaded features.json is not valid JSON");
-                [[NSNotificationCenter defaultCenter] postNotificationName:kCGFFeaturetteDidFailNotifiaction object:nil];
+                [[NSNotificationCenter defaultCenter] postNotificationName:kCGFFeaturetteDidFailNotification object:nil];
             }
         } else {
             // Failed to load feature file, notify observers, they should decide what to do
             CGFFLog(@"Failed to load features with error %@", error.description);
-            [[NSNotificationCenter defaultCenter] postNotificationName:kCGFFeaturetteDidFailNotifiaction object:nil];
+            [[NSNotificationCenter defaultCenter] postNotificationName:kCGFFeaturetteDidFailNotification object:nil];
         }
     }];
 }

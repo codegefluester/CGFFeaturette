@@ -88,7 +88,7 @@ I was looking for something similar for our App for a long time but didn't find 
 ## Code examples
 At first add the `CGFFeaturette.h` and `CGFFeaturette.m` to your project. There are no other dependencies.
 
-`AppDelegate.h`
+**AppDelegate.h**
 
 ```
 #import <UIKit/UIKit.h>
@@ -103,7 +103,7 @@ At first add the `CGFFeaturette.h` and `CGFFeaturette.m` to your project. There 
 @end
 ```
 
-`AppDelegate.m`
+**AppDelegate.m**
 
 ```
 @interface AppDelegate ()
@@ -140,3 +140,6 @@ At first add the `CGFFeaturette.h` and `CGFFeaturette.m` to your project. There 
 
 @end
 ```
+
+## ToDo
+- Add more filters (e.g. min-os-version instead of defining each supported OS version individually)
